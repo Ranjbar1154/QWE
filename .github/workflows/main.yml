@@ -1,31 +1,598 @@
-name: Create Windows Server VM in Azure
+From: <Saved by Blink>
+Snapshot-Content-Location: https://docs.google.com/document/u/0/d/1IoM5khcaJdQH5JlZf3NDx6lmz5D_B7C8kWYRRPvkvVM/mobilebasic
+Subject: FreeRDP
+Date: Sat, 13 Dec 2025 10:19:56 +0330
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--KLysf0wwt7b0oVtuMwbspi2QK331FNc1F0qphgfy5J----"
 
-on:
-  push:
-    branches:
-      - main
 
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
+------MultipartBoundary--KLysf0wwt7b0oVtuMwbspi2QK331FNc1F0qphgfy5J----
+Content-Type: text/html
+Content-ID: <frame-3A440742F6EB671282E7C604BE67B1A7@mhtml.blink>
+Content-Transfer-Encoding: binary
+Content-Location: https://docs.google.com/document/u/0/d/1IoM5khcaJdQH5JlZf3NDx6lmz5D_B7C8kWYRRPvkvVM/mobilebasic
 
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" type="text/css" href="cid:css-880b7acb-2dd5-4b89-a72c-3797589b57f7@mhtml.blink" /><link rel="stylesheet" type="text/css" href="cid:css-d305575d-d270-47ba-b36b-27b8a058f039@mhtml.blink" /><title>FreeRDP</title><link rel="shortcut icon" href="https://ssl.gstatic.com/docs/documents/images/kix-favicon-2023q4.ico"><meta property="og:title" content="FreeRDP"><meta property="og:type" content="article"><meta property="og:site_name" content="Google Docs"><meta property="og:url" content="https://docs.google.com/document/u/0/d/1IoM5khcaJdQH5JlZf3NDx6lmz5D_B7C8kWYRRPvkvVM/mobilebasic?usp=embed_facebook"><meta property="og:image" content="https://lh7-us.googleusercontent.com/docs/AHkbwyK2ObJGUPWqd2RyFYrM7ygkpMhzPn924dBuhdccyGacKny5RunqdwaxQ3AA054441ejM90za_JVtFJRW4sLrqhJh5SOK1I5ESo_Mug-Eiyy_iRbCZGv=w1200-h630-p"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:description" content="name: RDP  on:   workflow_dispatch:  jobs:   secure-rdp:     runs-on: windows-latest     timeout-minutes: 3600      steps:       - name: Configure Core RDP Settings         run: |           # Enable Remote Desktop and disable Network Level Authentication (if needed)           Set-ItemProperty -P..."><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=0"><meta name="referrer" content="strict-origin-when-cross-origin"><link type="text/css" rel="stylesheet" charset="UTF-8" href="https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.zf_XjFZUwaE.R.W.O/am=AAQD/d=0/rs=AN8SPfpX0QU6X1YYdwCbBaqzbNBsnAy_qQ/m=el_main_css"></head><body jsaction="u0pjoe:.CLIENT" class="docs-ml-promotion-no-horizontal-scroll"><div><div class="docs-ml-promotion docs-ml-promotion-off-screen docs-ml-promotion-shown" role="alertdialog" aria-labelledby="docs-ml-promotion-aria-label" aria-hidden="false"><div id="docs-ml-promotion-aria-label" style="display:none;">Alert message displayed.</div><div class="docs-ml-promotion-content"><div class="docs-ml-promotion-header"><span class="docs-ml-promotion-app-icon-container" aria-hidden="true"><div class="docs-ml-icon docs-ml-promotion-app-icon"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 36 36"><path fill="none" d="M0 0h36v36H0z"></path><path fill="#fff" d="M10.9 18.4h14.2V21H10.9zM10.9 22.9h10.5v2.6H10.9z"></path><path fill="#1967d2" d="M21.8 9.8l4.5.8 3.7-.8-8.2-8.3-1.2 3.9z"></path><path fill="#fff" d="M10.9 13.9h14.2v2.6H10.9z"></path><path d="M21.8 9.8V1.5H8.2C7 1.5 6 2.5 6 3.8v28.5c0 1.2 1 2.2 2.2 2.2h19.5c1.2 0 2.2-1 2.2-2.2V9.8h-8.1zM21 25.1h-9.8v-1.9H21v1.9zm3.8-4.5H11.2v-1.9h13.5v1.9zm0-4.5H11.2v-1.9h13.5v1.9z" fill="#4285f4"></path></svg></div></span><span class="docs-ml-promotion-text"><div class="docs-ml-promotion-text-heading">Edit with the Docs app</div><div class="docs-ml-promotion-text-body">Make tweaks, leave comments, and share with others to edit at the same time.</div></span></div><div class="docs-ml-promotion-action-row"><span class="docs-ml-promotion-action-container"><span class="docs-ml-promotion-action-button-wrapper docs-ml-promotion-no-button-wrapper" role="button" tabindex="0"><span class="docs-ml-promotion-action-button docs-ml-promotion-no-button">NO THANKS</span></span></span><span class="docs-ml-promotion-action-container"><span class="docs-ml-promotion-action-button-wrapper docs-ml-promotion-yes-button-wrapper" role="button" tabindex="0"><span class="docs-ml-promotion-action-button docs-ml-promotion-yes-button">USE THE APP</span></span></span></div></div></div></div><div id="docs-ml-header-id" class="docs-ml-header" aria-hidden="true"><span class="docs-ml-header-item docs-ml-header-drive-link"><div id="docs-ml-header-drive-link-aria-label" style="display:none;">Go to Drive</div><a href="https://drive.google.com/u/0?usp=docs_web" aria-labelledby="docs-ml-header-drive-link-aria-label" role="button"><div class="docs-ml-header-icon-container"><div class="docs-ml-icon docs-ml-header-icon docs-ml-arrow-back-dir"><div class="docs-ml-img-container docs-ml-img docs-ml-arrow-back-icon"></div></div></div></a></span><span class="docs-ml-header-item docs-ml-header-document-title"><div class="docs-ml-header-document-title-text">FreeRDP</div></span></div><div class="app-container" aria-hidden="true"><div class="doc-container"><div class="doc"><div class="doc-content" style="background-color:#ffffff;max-width:468pt;padding:72pt 72pt 72pt 72pt"><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">name: RDP</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal"></span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">on:</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; workflow_dispatch:</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal"></span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">jobs:</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; secure-rdp:</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; runs-on: windows-latest</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; timeout-minutes: 3600</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal"></span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; steps:</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; - name: Configure Core RDP Settings</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; run: |</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # Enable Remote Desktop and disable Network Level Authentication (if needed)</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server' `</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-Name "fDenyTSConnections" -Value 0 -Force</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp' `</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-Name "UserAuthentication" -Value 0 -Force</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp' `</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-Name "SecurityLayer" -Value 0 -Force</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal"></span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # Remove any existing rule with the same name to avoid duplication</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; netsh advfirewall firewall delete rule name="RDP-Tailscale"</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # For testing, allow any incoming connection on port 3389</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; netsh advfirewall firewall add rule name="RDP-Tailscale" `</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; dir=in action=allow protocol=TCP localport=3389</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal"></span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # (Optional) Restart the Remote Desktop service to ensure changes take effect</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Restart-Service -Name TermService -Force</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal"></span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; - name: Create RDP User with Secure Password</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; run: |</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Add-Type -AssemblyName System.Security</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $charSet = @{</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Upper &nbsp; = [char[]](65..90) &nbsp; &nbsp; &nbsp;# A-Z</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Lower &nbsp; = [char[]](97..122) &nbsp; &nbsp; # a-z</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Number &nbsp;= [char[]](48..57) &nbsp; &nbsp; &nbsp;# 0-9</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Special = ([char[]](33..47) + [char[]](58..64) +</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[char[]](91..96) + [char[]](123..126)) # Special characters</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $rawPassword = @()</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $rawPassword += $charSet.Upper | Get-Random -Count 4</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $rawPassword += $charSet.Lower | Get-Random -Count 4</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $rawPassword += $charSet.Number | Get-Random -Count 4</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $rawPassword += $charSet.Special | Get-Random -Count 4</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $password = -join ($rawPassword | Sort-Object { Get-Random })</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $securePass = ConvertTo-SecureString $password -AsPlainText -Force</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; New-LocalUser -Name "RDP" -Password $securePass -AccountNeverExpires</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Add-LocalGroupMember -Group "Administrators" -Member "RDP"</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Add-LocalGroupMember -Group "Remote Desktop Users" -Member "RDP"</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; echo "RDP_CREDS=User: RDP | Password: $password" &gt;&gt; $env:GITHUB_ENV</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (-not (Get-LocalUser -Name "RDP")) {</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Write-Error "User creation failed"</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; exit 1</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal"></span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; - name: Install Tailscale</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; run: |</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $tsUrl = "https://pkgs.tailscale.com/stable/tailscale-setup-1.82.0-amd64.msi"</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $installerPath = "$env:TEMP\tailscale.msi"</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Invoke-WebRequest -Uri $tsUrl -OutFile $installerPath</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Start-Process msiexec.exe -ArgumentList "/i", "`"$installerPath`"", "/quiet", "/norestart" -Wait</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Remove-Item $installerPath -Force</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal"></span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; - name: Establish Tailscale Connection</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; run: |</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # Bring up Tailscale with the provided auth key and set a unique hostname</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &amp; "$env:ProgramFiles\Tailscale\tailscale.exe" up --authkey=${{ secrets.TAILSCALE_AUTH_KEY }} --hostname=gh-runner-$env:GITHUB_RUN_ID</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # Wait for Tailscale to assign an IP</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $tsIP = $null</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $retries = 0</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; while (-not $tsIP -and $retries -lt 10) {</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $tsIP = &amp; "$env:ProgramFiles\Tailscale\tailscale.exe" ip -4</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Start-Sleep -Seconds 5</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $retries++</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (-not $tsIP) {</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Write-Error "Tailscale IP not assigned. Exiting."</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; exit 1</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; echo "TAILSCALE_IP=$tsIP" &gt;&gt; $env:GITHUB_ENV</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; </span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; - name: Verify RDP Accessibility</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; run: |</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Write-Host "Tailscale IP: $env:TAILSCALE_IP"</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # Test connectivity using Test-NetConnection against the Tailscale IP on port 3389</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $testResult = Test-NetConnection -ComputerName $env:TAILSCALE_IP -Port 3389</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (-not $testResult.TcpTestSucceeded) {</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Write-Error "TCP connection to RDP port 3389 failed"</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; exit 1</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Write-Host "TCP connectivity successful!"</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal"></span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; - name: Maintain Connection</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; run: |</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Write-Host "`n=== RDP ACCESS ==="</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Write-Host "Address: $env:TAILSCALE_IP"</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Write-Host "Username: RDP"</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Write-Host "Password: $(echo $env:RDP_CREDS)"</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Write-Host "==================`n"</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # Keep runner active indefinitely (or until manually cancelled)</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; while ($true) {</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Write-Host "[$(Get-Date)] RDP Active - Use Ctrl+C in workflow to terminate"</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Start-Sleep -Seconds 300</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal"></span></p></div></div></div></div><div id="goog-gt-tt" class="VIpgJd-yAWNEb-L7lbkb skiptranslate" style="border-radius: 12px; margin: 0 0 0 -23px; padding: 0; font-family: 'Google Sans', Arial, sans-serif;" data-id=""><div id="goog-gt-vt" class="VIpgJd-yAWNEb-hvhgNd"><div class="VIpgJd-yAWNEb-hvhgNd-Ud7fr"><img src="https://fonts.gstatic.com/s/i/productlogos/translate/v14/24px.svg" width="24" height="24" alt=""><div class=" VIpgJd-yAWNEb-hvhgNd-IuizWc-SIsrTd " dir="rtl">Ù†ÙˆØ´ØªØ§Ø± Ø§ØµÙ„ÛŒ</div></div><div class="VIpgJd-yAWNEb-hvhgNd-k77Iif"><div id="goog-gt-original-text" class="VIpgJd-yAWNEb-nVMfcd-fmcmS VIpgJd-yAWNEb-hvhgNd-axAV1"></div></div><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid rtl"><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od rtl" dir="rtl"><div class="VIpgJd-yAWNEb-hvhgNd-UTujCb">Ø§Ù…ØªÛŒØ§Ø² Ø¯Ø§Ø¯Ù† Ø¨Ù‡ Ø§ÛŒÙ† ØªØ±Ø¬Ù…Ù‡</div><div class="VIpgJd-yAWNEb-hvhgNd-eO9mKe">Ø§Ø² Ø¨Ø§Ø²Ø®ÙˆØ±Ø¯ Ø´Ù…Ø§ Ø¨Ø±Ø§ÛŒ Ú©Ù…Ú© Ø¨Ù‡ Ø¨Ù‡Ø¨ÙˆØ¯ Â«ØªØ±Ø¬Ù…Ù‡ GoogleÂ» Ø§Ø³ØªÙØ§Ø¯Ù‡ Ø®ÙˆØ§Ù‡Ø¯ Ø´Ø¯</div></div><div class="VIpgJd-yAWNEb-hvhgNd-xgov5 rtl"><button id="goog-gt-thumbDownButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="ØªØ±Ø¬Ù…Ù‡ Ø¶Ø¹ÛŒÙ" aria-label="ØªØ±Ø¬Ù…Ù‡ Ø¶Ø¹ÛŒÙ" aria-pressed="false"><span id="goog-gt-thumbDownIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7h5V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zM17 6h3v9h-3V6zM3 13l3-7h9v10l-4.34 4.34L12 15H3v-2z"></path></svg></span><span id="goog-gt-thumbDownIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zm16 0h4V4h-4v13z"></path></svg></span></button><button id="goog-gt-thumbUpButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="ØªØ±Ø¬Ù…Ù‡ Ø®ÙˆØ¨" aria-label="ØªØ±Ø¬Ù…Ù‡ Ø®ÙˆØ¨" aria-pressed="false"><span id="goog-gt-thumbUpIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7H2v13h16c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM7 18H4V9h3v9zm14-7l-3 7H9V8l4.34-4.34L12 9h9v2z"></path></svg></span><span id="goog-gt-thumbUpIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7v13h11c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM5 7H1v13h4V7z"></path></svg></span></button></div></div><div id="goog-gt-votingHiddenPane" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><form id="goog-gt-votingForm" action="https://translate.googleapis.com/translate_voting?client=te_lib" method="post" target="votingFrame" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><input type="text" name="sl" id="goog-gt-votingInputSrcLang"><input type="text" name="tl" id="goog-gt-votingInputTrgLang"><input type="text" name="query" id="goog-gt-votingInputSrcText"><input type="text" name="gtrans" id="goog-gt-votingInputTrgText"><input type="text" name="vote" id="goog-gt-votingInputVote"></form><iframe name="votingFrame" frameborder="0"></iframe></div></div></div></body></html>
+------MultipartBoundary--KLysf0wwt7b0oVtuMwbspi2QK331FNc1F0qphgfy5J----
+Content-Type: image/svg+xml
+Content-Transfer-Encoding: binary
+Content-Location: https://fonts.gstatic.com/s/i/productlogos/translate/v14/24px.svg
 
-    - name: Set up Azure CLI
-      uses: azure/setup-azure-cli@v1
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><defs><path d="M21.5 5h-9.17L11 1H2.5C1.68 1 1 1.68 1 2.5v15c0 .83.68 1.5 1.5 1.5h9.17L13 23h8.5c.82 0 1.5-.68 1.5-1.5v-15c0-.83-.68-1.5-1.5-1.5z" id="a"/></defs><clipPath id="b"><use overflow="visible" xlink:href="#a"/></clipPath><g clip-path="url(#b)"><image height="31" opacity=".2" overflow="visible" transform="translate(3 1)" width="29" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAfCAYAAAAbW8YEAAAACXBIWXMAAAsSAAALEgHS3X78AAAA GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABQBJREFUeNq8V8tu20YUvXdm+LCk RKiMwI1TFEXhVZJd1gW66xekv9DPqPsvXdU/UaDroJskKy+CInCcGpKtFy2SM/f2DEXZia0odtKW AkFJ8zhzzn3S0Ycvps+79EMDbj3Yfgv4EM+XTN/fEOb3Zg3AXmq7j64D5/e/x/EfzZMnX5jx+LFZ LLyp6yNDOzskYb6RubFdpbdvKUl2Jc+d9PvP5dmzUyH6TVoYXQOq+H5g9vb+cONsO9maLpIyyZPU kZNAppmh9Vpg5kSXwCSVJ5/Vi/r8Tl73y2F9ePidJ3oaga+B4vkUgF+6EW1ndz11gvNdDdL1bDNr yKkCWO16thyUGWIIeae2ZGvn1of5xFExoGF5eHgM4ANZsW032Tf05MjeW+xmNKeedeWAg9tmywPM 6rGYzOAPBSfQ5Ss0Nf4pAmRrSmBP1ehIxQ6DpxF1aXaSH5X0bDcAR1aOxLRPtPdrZrwnd55Sx3gz IMO72OwBq9kmox0RSkHHRNxrRJWFDbQXKpR1xN4eOfx0NqnMdFHulY/rw/1RAE5crEvvffGCvX/E VUoOC3Mm24eaO6TyNZjeB5E+sDLMt2tCqZEW8lcgPSU2x0IhKlAYoTP4xUTueUMvHvJK3ouQ8ffH HP62JpGeg/VSYciqNADbHQxvY5etdr65yhNXlG2B5xjzgWfHJoSeZ5Olbuaq+czQyYSvxal701dJ SWoigRNqXItjORhsC+x74NfDtPQ6aGPkgAUlGROpTKBQR4gbB1x6fjz3/DK8GsoHj/SVG6pJACi+ NhQdApsQJFPCeliYKImgeEJmylc3Xzw5yp9xnIMYMkZt9HjVhK/GeHtqZI5+KUVJXtSVQcwcYDPo FI93jhW+DWSjzZrGts0NQSwOZTFoMaMBaly6CTFZG2KXUt3Z1aQzC36rKrFJ0cgUb6aZRnuRwjtI lo7Eq3CLWSya4eJ7a+TN2eudvClbk17ItFepoQLrpyQyxkZTjBYIiwqnXwF/1mXerQivtu+Hohp7 tf7cWJnCTgBleCQ3bBEaPiaCTRXkNqBLu955o2kv+NzIIogDkGlAEfuwL51DYh9z3sdK1y1ALyX2 FxJLK3Fj339NYnO16P4fEl8J9HUSaytxTHFRYqrhnJ60AZU2lNpDNOULaZH1FqBXJS4LhN8ECeos MgbLWUx3AK+xv4+ZKN6ACxxlZw0xDzdZKj7Z6E1ALyQ+91WNclwgIU6wwRli7xTkzjA8BQCSBxfL +MUhlnGMDMYlfsPuWsdSF4GZa226io1MW4nzPvkQbWgDnIlGYHSCTU+QbOI9BNtTTB7hxmEIh+FT KDJGZoiVpkA6KmNRj90E0duPNmaNxJ29QVh0RxWsOMNRh0JyDIk7LBK1iw62BV1cLKaXpY2n+HWs GkZidOZEysp3fDK4K3TvK90EisGf6bD/k6CTqDpBZt6EoTWcSXQU5mhX1FvNm/XRiyQiaw0XKmDi EXL9kdV6FMMu9kvpyUDoB3SIB5uYxp2+fSr9P7Na7IOipsUpxZ5BqISNTw1rFy6bGrKoIjAbS9uu EKoT2NowqiWJ7cqM0KD9lT8X2t+lKz3S2l4Z/e4v9ptXzcFyn9Zd8nlHHcjXaNZsaCvKqlW6dWP2 Ibr7sdE2e68H9sy+TvN5J6nwydLUvtuWfmoLugH4Zg34JzbbHwO/wavG+68VdJPXihuC/zcvUJ+0 0W2ufwQYAGHKK2CFMIrzAAAAAElFTkSuQmCC"/><radialGradient cx="7.394" cy="5.437" gradientUnits="userSpaceOnUse" id="c" r="23.416"><stop offset="0" stop-color="#EEE"/><stop offset=".432" stop-color="#E6E6E6"/><stop offset="1" stop-color="#E1E1E1"/></radialGradient><path d="M13 23h8.5c.82 0 1.5-.68 1.5-1.5v-15c0-.83-.68-1.5-1.5-1.5H7l6 18z" fill="url(#c)"/></g><path clip-path="url(#b)" d="M18 11v-1h-1v1h-3.75v1h5.32c-.2.49-.6 1.3-1.32 2.14-.51-.6-.86-1.18-1.1-1.64h-1.11c.36.84.9 1.66 1.52 2.38l-2.6 2.58.71.71 2.58-2.58 2.58 2.58.71-.71-2.6-2.58c.74-.86 1.33-1.85 1.68-2.88H21v-1h-3z" fill="#607D8B"/><linearGradient gradientUnits="userSpaceOnUse" id="d" x1="12.333" x2="23" y1="14" y2="14"><stop offset="0" stop-color="#212121" stop-opacity=".1"/><stop offset="1" stop-color="#212121" stop-opacity=".02"/></linearGradient><path clip-path="url(#b)" d="M12.33 5L23 15.67V23H13" fill="url(#d)"/><g clip-path="url(#b)"><image height="8" opacity=".1" overflow="visible" transform="translate(10.5 17.5)" width="9" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAYAAAALpr0TAAAACXBIWXMAAAsSAAALEgHS3X78AAAA GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAOFJREFUeNp0UD1LA0EUnLe7JsJh CiFpLVNYaS3411L7Z/InUpgmqRIRLGxEOEVQsoRcbnecu6AGTB4M72vevjdr+DPDf+Nvs3858q7a Fp4oDOZBJ5dJMCVDzJ2T+LYYpeAyTj39UMNXhA00HABXKy89bY6UlqrFoMHm5QK0a/mbXYxSyyZm eCBTe5Kr68+NGq+Kv4QzoSM8q3ZP8imjXjdEv/6Ysnd+q6a7UN4XFsKYlifbUJXvj3ftytAqM1vJ z6UgGvgiIbN90g8RVddFKZ/pzqX+Y5NDtdonHTI71vgWYADzWmdx/4fpmQAAAABJRU5ErkJggg=="/><path d="M17 19l-4 4-1.33-4" fill="#3F51B5"/></g><path clip-path="url(#b)" d="M21.5 5H7l.04.12H21.5c.82 0 1.5.67 1.5 1.5V6.5c0-.83-.68-1.5-1.5-1.5z" fill="#212121" fill-opacity=".02"/><path clip-path="url(#b)" d="M21.5 22.88H13L11.71 19h-.04L13 23h8.5c.82 0 1.5-.68 1.5-1.5v-.12c0 .82-.68 1.5-1.5 1.5z" fill="#212121" fill-opacity=".1"/><path clip-path="url(#b)" d="M12.97 22.91L13 23l4-4h-.12" fill="#1A237E" fill-opacity=".2"/><path clip-path="url(#b)" d="M11.67 19.12h5.21L17 19h-5.33" fill="#1A237E" fill-opacity=".1"/><g clip-path="url(#b)"><image height="22" opacity=".2" overflow="visible" transform="translate(-.5 -.5)" width="20" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAXCAYAAADk3wSdAAAACXBIWXMAAAsSAAALEgHS3X78AAAA GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAUpJREFUeNqslbFOwzAQQO/sQCRc sqAOlRgrMjCVr+Er+IZ+Ax/WTCwVeyVQl9IOQY2Pc2qhNFwcGsdSrHNsP52fpTPCeUP4X6PQZA2Z Pi41lqXRpCYKtA5tsFBVFdo9penh821ZSWsS112X1hBdPXG44BSyQMaEoHcJ6QJLu+LxrguKQDQB UAuOn3nfLATlqc0psmvuvyQVibfARyaXoQPeh6Hk9Mw4uL2bv3xs31+P7UWq5Rd7LsvN8akg5zBP KTPSIgWXN3OCQo6ARkpiCNQd36maegV6DGgjW1lBJFRWMBQaVDAUGlQwAvSvghhop4IYaKeCkaDn CmKhooJYqKhAtao59VV1od3w99BU4EsfcQVXruBuPBMvgJIv1sdmPSVA3HOhLvy/bCC0qDk8rjP9 TtWB36gVv1Hrvjeq792SjokRF/Z7Fz8CDAC8EmWDKVGDLgAAAABJRU5ErkJggg=="/><path d="M11 1H2.5C1.68 1 1 1.68 1 2.5v15c0 .83.68 1.5 1.5 1.5H17L11 1z" fill="#4285F4"/></g><path clip-path="url(#b)" d="M2.5 1C1.68 1 1 1.68 1 2.5v.12c0-.82.68-1.5 1.5-1.5H11V1H2.5z" fill="#FFF" fill-opacity=".02"/><path clip-path="url(#b)" d="M11 1v.12l5.92 17.75H2.5c-.82 0-1.5-.67-1.5-1.5v.12c0 .84.68 1.51 1.5 1.51H17L11 1z" fill="#212121" fill-opacity=".1"/><g clip-path="url(#b)"><path d="M7.5 10v1.2h1.98c-.08.52-.6 1.51-1.98 1.51-1.2 0-2.17-.99-2.17-2.21S6.3 8.29 7.5 8.29c.68 0 1.13.29 1.39.54l.95-.92C9.24 7.35 8.44 7 7.5 7 5.57 7 4 8.57 4 10.5S5.57 14 7.5 14c2.02 0 3.36-1.42 3.36-3.42 0-.23-.02-.41-.06-.58H7.5z" fill="#EEE"/><path d="M4 7h7v7H4z" fill="none"/></g><radialGradient cx="1.457" cy="1.42" gradientUnits="userSpaceOnUse" id="e" r="29.792"><stop offset="0" stop-color="#FFF" stop-opacity=".1"/><stop offset="1" stop-color="#FFF" stop-opacity="0"/></radialGradient><path d="M21.5 5h-9.17L11 1H2.5C1.68 1 1 1.68 1 2.5v15c0 .83.68 1.5 1.5 1.5h9.17L13 23h8.5c.82 0 1.5-.68 1.5-1.5v-15c0-.83-.68-1.5-1.5-1.5z" fill="url(#e)"/></svg>
+------MultipartBoundary--KLysf0wwt7b0oVtuMwbspi2QK331FNc1F0qphgfy5J----
+Content-Type: text/css
+Content-Transfer-Encoding: binary
+Content-Location: https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.zf_XjFZUwaE.R.W.O/am=AAQD/d=0/rs=AN8SPfpX0QU6X1YYdwCbBaqzbNBsnAy_qQ/m=el_main_css
 
-    - name: Login to Azure
-      run: az login --service-principal -u ${{ secrets.AZURE_USERNAME }} -p ${{ secrets.AZURE_PASSWORD }} --tenant ${{ secrets.AZURE_TENANT_ID }}
+@charset "utf-8";
 
-    - name: Create VM in Azure
-      run: |
-        az vm create \
-          --resource-group myResourceGroup \
-          --name myVM \
-          --image win2019datacenter \
-          --size Standard_B1s \
-          --admin-username azureuser \
-          --admin-password mypassword \
-          --authentication-type password
+.VIpgJd-ZVi9od-ORHb-OEVmcd { right: 0px; top: 0px; height: 39px; width: 100%; z-index: 10000001; position: fixed; border-top: none; border-right: none; border-left: none; border-image: initial; border-bottom: 1px solid rgb(107, 144, 218); margin: 0px; box-shadow: rgb(153, 153, 153) 0px 0px 8px 1px; }
+
+.VIpgJd-ZVi9od-xl07Ob-OEVmcd { z-index: 10000002; border: none; position: fixed; box-shadow: rgb(153, 153, 153) 0px 3px 8px 2px; }
+
+.VIpgJd-ZVi9od-SmfZ-OEVmcd { z-index: 10000000; border: none; margin: 0px; }
+
+.goog-te-gadget { font-family: arial; font-size: 11px; color: rgb(102, 102, 102); white-space: nowrap; }
+
+.goog-te-gadget img { vertical-align: middle; border: none; }
+
+.goog-te-gadget-simple { background-color: rgb(255, 255, 255); border-width: 1px; border-style: solid; border-color: rgb(155, 155, 155) rgb(213, 213, 213) rgb(232, 232, 232); font-size: 10pt; display: inline-block; padding-top: 1px; padding-bottom: 2px; cursor: pointer; }
+
+.goog-te-gadget-icon { margin-right: 2px; margin-left: 2px; width: 19px; height: 19px; border: none; vertical-align: middle; }
+
+.goog-te-combo { margin-right: 4px; margin-left: 4px; vertical-align: baseline; }
+
+.goog-te-gadget .goog-te-combo { margin: 4px 0px; }
+
+.VIpgJd-ZVi9od-l4eHX-hSRGPd, .VIpgJd-ZVi9od-l4eHX-hSRGPd:link, .VIpgJd-ZVi9od-l4eHX-hSRGPd:visited, .VIpgJd-ZVi9od-l4eHX-hSRGPd:hover, .VIpgJd-ZVi9od-l4eHX-hSRGPd:active { font-size: 12px; font-weight: bold; color: rgb(68, 68, 68); text-decoration: none; }
+
+.VIpgJd-ZVi9od-ORHb .VIpgJd-ZVi9od-l4eHX-hSRGPd, .VIpgJd-ZVi9od-TvD9Pc-hSRGPd { display: block; margin: 0px 10px; }
+
+.VIpgJd-ZVi9od-ORHb .VIpgJd-ZVi9od-l4eHX-hSRGPd { padding-top: 2px; padding-right: 4px; }
+
+.goog-te-combo, .VIpgJd-ZVi9od-ORHb *, .VIpgJd-ZVi9od-SmfZ *, .VIpgJd-ZVi9od-xl07Ob *, .VIpgJd-ZVi9od-vH1Gmf *, .VIpgJd-ZVi9od-l9xktf * { font-family: arial; font-size: 10pt; }
+
+.VIpgJd-ZVi9od-ORHb { margin: 0px; background-color: rgb(228, 239, 251); overflow: hidden; }
+
+.VIpgJd-ZVi9od-ORHb img { border: none; }
+
+.VIpgJd-ZVi9od-ORHb-bN97Pc { color: rgb(0, 0, 0); }
+
+.VIpgJd-ZVi9od-ORHb-bN97Pc img { vertical-align: middle; }
+
+.VIpgJd-ZVi9od-ORHb-Tswv1b { color: rgb(102, 102, 102); vertical-align: top; margin-top: 0px; font-size: 7pt; }
+
+.VIpgJd-ZVi9od-ORHb-KE6vqe { width: 8px; }
+
+.VIpgJd-ZVi9od-LgbsSe { border-color: rgb(231, 231, 231); border-style: none none solid solid; border-width: 0px 0px 1px 1px; }
+
+.VIpgJd-ZVi9od-LgbsSe div { border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(153, 153, 153) rgb(153, 153, 153); border-style: solid; border-width: 1px; height: 20px; }
+
+.VIpgJd-ZVi9od-LgbsSe button { background: transparent; border: none; cursor: pointer; height: 20px; overflow: hidden; margin: 0px; vertical-align: top; white-space: nowrap; }
+
+.VIpgJd-ZVi9od-LgbsSe button:active { background: none 100% 0px repeat scroll rgb(204, 204, 204); }
+
+.VIpgJd-ZVi9od-SmfZ { margin: 0px; background-color: rgb(255, 255, 255); white-space: nowrap; }
+
+.VIpgJd-ZVi9od-SmfZ-hSRGPd { text-decoration: none; font-weight: bold; font-size: 10pt; border: 1px outset rgb(136, 136, 136); padding: 6px 10px; white-space: nowrap; position: absolute; right: 0px; top: 0px; }
+
+.VIpgJd-ZVi9od-SmfZ-hSRGPd img { margin-right: 2px; margin-left: 2px; width: 19px; height: 19px; border: none; vertical-align: middle; }
+
+.VIpgJd-ZVi9od-SmfZ-hSRGPd span { text-decoration: underline; margin-right: 2px; margin-left: 2px; vertical-align: middle; }
+
+.goog-te-float-top .VIpgJd-ZVi9od-SmfZ-hSRGPd { padding: 2px; border-top-width: 0px; }
+
+.goog-te-float-bottom .VIpgJd-ZVi9od-SmfZ-hSRGPd { padding: 2px; border-bottom-width: 0px; }
+
+.VIpgJd-ZVi9od-xl07Ob-lTBxed { text-decoration: none; color: rgb(0, 0, 204); white-space: nowrap; margin-right: 4px; margin-left: 4px; }
+
+.VIpgJd-ZVi9od-xl07Ob-lTBxed span { text-decoration: underline; }
+
+.VIpgJd-ZVi9od-xl07Ob-lTBxed img { margin-right: 2px; margin-left: 2px; }
+
+.goog-te-gadget-simple .VIpgJd-ZVi9od-xl07Ob-lTBxed { color: rgb(0, 0, 0); }
+
+.goog-te-gadget-simple .VIpgJd-ZVi9od-xl07Ob-lTBxed span { text-decoration: none; }
+
+.VIpgJd-ZVi9od-xl07Ob { background-color: rgb(255, 255, 255); text-decoration: none; border: 2px solid rgb(195, 217, 255); overflow: hidden scroll; position: absolute; right: 0px; top: 0px; }
+
+.VIpgJd-ZVi9od-xl07Ob-ibnC6b { padding: 3px; text-decoration: none; }
+
+.VIpgJd-ZVi9od-xl07Ob-ibnC6b, .VIpgJd-ZVi9od-xl07Ob-ibnC6b:link { color: rgb(0, 0, 204); background: rgb(255, 255, 255); }
+
+.VIpgJd-ZVi9od-xl07Ob-ibnC6b:visited { color: rgb(85, 26, 139); }
+
+.VIpgJd-ZVi9od-xl07Ob-ibnC6b:hover { background: rgb(195, 217, 255); }
+
+.VIpgJd-ZVi9od-xl07Ob-ibnC6b:active { color: rgb(0, 0, 204); }
+
+.VIpgJd-ZVi9od-vH1Gmf { background-color: rgb(255, 255, 255); text-decoration: none; border: 1px solid rgb(107, 144, 218); overflow: hidden; padding: 4px; }
+
+.VIpgJd-ZVi9od-vH1Gmf-KrhPNb { width: 16px; }
+
+.VIpgJd-ZVi9od-vH1Gmf-hgDUwe { margin: 6px 0px; height: 1px; background-color: rgb(170, 170, 170); overflow: hidden; }
+
+.VIpgJd-ZVi9od-vH1Gmf-ibnC6b div, .VIpgJd-ZVi9od-vH1Gmf-ibnC6b-gk6SMd div { padding: 4px; }
+
+.VIpgJd-ZVi9od-vH1Gmf-ibnC6b .uDEFge { display: none; }
+
+.VIpgJd-ZVi9od-vH1Gmf-ibnC6b-gk6SMd .fmcmS { padding-right: 4px; padding-left: 4px; }
+
+.VIpgJd-ZVi9od-vH1Gmf-ibnC6b, .VIpgJd-ZVi9od-vH1Gmf-ibnC6b-gk6SMd { text-decoration: none; }
+
+.VIpgJd-ZVi9od-vH1Gmf-ibnC6b div, .VIpgJd-ZVi9od-vH1Gmf-ibnC6b:link div, .VIpgJd-ZVi9od-vH1Gmf-ibnC6b:visited div, .VIpgJd-ZVi9od-vH1Gmf-ibnC6b:active div { color: rgb(0, 0, 204); background: rgb(255, 255, 255); }
+
+.VIpgJd-ZVi9od-vH1Gmf-ibnC6b:hover div { color: rgb(255, 255, 255); background: rgb(51, 102, 204); }
+
+.VIpgJd-ZVi9od-vH1Gmf-ibnC6b-gk6SMd div, .VIpgJd-ZVi9od-vH1Gmf-ibnC6b-gk6SMd:link div, .VIpgJd-ZVi9od-vH1Gmf-ibnC6b-gk6SMd:visited div, .VIpgJd-ZVi9od-vH1Gmf-ibnC6b-gk6SMd:hover div, .VIpgJd-ZVi9od-vH1Gmf-ibnC6b-gk6SMd:active div { color: rgb(0, 0, 0); font-weight: bold; }
+
+.VIpgJd-ZVi9od-l9xktf { background-color: rgb(255, 255, 255); overflow: hidden; padding: 8px; border: none; border-radius: 10px; }
+
+.VIpgJd-ZVi9od-l9xktf-OEVmcd { background-color: rgb(255, 255, 255); border: 1px solid rgb(107, 144, 218); box-shadow: rgb(153, 153, 153) 0px 3px 8px 2px; border-radius: 8px; }
+
+.VIpgJd-ZVi9od-l9xktf img { border: none; }
+
+.VIpgJd-ZVi9od-l9xktf-fmcmS { margin-top: 6px; }
+
+.VIpgJd-ZVi9od-l9xktf-VgwJlc { margin-top: 6px; white-space: nowrap; }
+
+.VIpgJd-ZVi9od-l9xktf-VgwJlc * { vertical-align: middle; }
+
+.VIpgJd-ZVi9od-l9xktf-VgwJlc .DUGJie { background-image: url("https://www&google.com/images/zippy_minus_sm.gif"); }
+
+.VIpgJd-ZVi9od-l9xktf-VgwJlc .TdyTDe { background-image: url("https://www&google.com/images/zippy_plus_sm.gif"); }
+
+.VIpgJd-ZVi9od-l9xktf-VgwJlc span { color: rgb(0, 0, 204); text-decoration: underline; cursor: pointer; margin: 0px 4px; }
+
+.VIpgJd-ZVi9od-l9xktf-I9GLp { margin: 6px 0px 0px; }
+
+.VIpgJd-ZVi9od-l9xktf-I9GLp form { margin: 0px; }
+
+.VIpgJd-ZVi9od-l9xktf-I9GLp form textarea { margin-bottom: 4px; width: 100%; }
+
+.VIpgJd-ZVi9od-l9xktf-yePe5c { margin: 6px 0px 4px; }
+
+.VIpgJd-ZVi9od-aZ2wEe-wOHMyf { z-index: 1000; position: fixed; transition-delay: 0.6s; right: -1000px; top: -1000px; }
+
+.VIpgJd-ZVi9od-aZ2wEe-wOHMyf-ti6hGc { transition-delay: 0s; right: -14px; top: -14px; }
+
+.VIpgJd-ZVi9od-aZ2wEe-OiiCO { display: flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; width: 104px; height: 104px; border-radius: 50px; background: url("https://www.gstatic.com/images/branding/product/2x/translate_24dp.png") 50% 50% no-repeat rgb(255, 255, 255); transition: 0.6s ease-in-out; transform: scale(0.4); opacity: 0; }
+
+.VIpgJd-ZVi9od-aZ2wEe-OiiCO-ti6hGc { transform: scale(0.5); opacity: 1; }
+
+.VIpgJd-ZVi9od-aZ2wEe { margin: 2px 2px 0px 0px; animation: 1.4s linear 0s infinite normal none running spinner-rotator; }
+
+@-webkit-keyframes spinner-rotator { 
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(-270deg); }
+}
+
+@keyframes spinner-rotator { 
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(-270deg); }
+}
+
+.VIpgJd-ZVi9od-aZ2wEe-Jt5cK { stroke-dasharray: 187; stroke-dashoffset: 0; stroke: rgb(66, 133, 244); transform-origin: center center; animation: 1.4s ease-in-out 0s infinite normal none running spinner-dash; }
+
+@-webkit-keyframes spinner-dash { 
+  0% { stroke-dashoffset: 187; }
+  50% { stroke-dashoffset: 46.75; transform: rotate(-135deg); }
+  100% { stroke-dashoffset: 187; transform: rotate(-450deg); }
+}
+
+@keyframes spinner-dash { 
+  0% { stroke-dashoffset: 187; }
+  50% { stroke-dashoffset: 46.75; transform: rotate(-135deg); }
+  100% { stroke-dashoffset: 187; transform: rotate(-450deg); }
+}
+
+.VIpgJd-yAWNEb-L7lbkb html, .VIpgJd-yAWNEb-L7lbkb body, .VIpgJd-yAWNEb-L7lbkb div, .VIpgJd-yAWNEb-L7lbkb span, .VIpgJd-yAWNEb-L7lbkb iframe, .VIpgJd-yAWNEb-L7lbkb h1, .VIpgJd-yAWNEb-L7lbkb h2, .VIpgJd-yAWNEb-L7lbkb h3, .VIpgJd-yAWNEb-L7lbkb h4, .VIpgJd-yAWNEb-L7lbkb h5, .VIpgJd-yAWNEb-L7lbkb h6, .VIpgJd-yAWNEb-L7lbkb p, .VIpgJd-yAWNEb-L7lbkb a, .VIpgJd-yAWNEb-L7lbkb img, .VIpgJd-yAWNEb-L7lbkb ol, .VIpgJd-yAWNEb-L7lbkb ul, .VIpgJd-yAWNEb-L7lbkb li, .VIpgJd-yAWNEb-L7lbkb table, .VIpgJd-yAWNEb-L7lbkb form, .VIpgJd-yAWNEb-L7lbkb tbody, .VIpgJd-yAWNEb-L7lbkb tr, .VIpgJd-yAWNEb-L7lbkb td { color-scheme: unset; forced-color-adjust: unset; mask: unset; math-depth: unset; position: unset; position-anchor: unset; text-size-adjust: unset; appearance: unset; color: unset; font-family: unset; font-feature-settings: unset; font-kerning: unset; font-language-override: unset; font-optical-sizing: unset; font-palette: unset; font-size: 100%; font-size-adjust: unset; font-stretch: unset; font-style: unset; font-synthesis: unset; font-variant: unset; font-variation-settings: unset; font-weight: unset; position-area: unset; text-orientation: unset; text-rendering: unset; text-spacing-trim: unset; -webkit-font-smoothing: unset; -webkit-locale: unset; -webkit-text-orientation: unset; -webkit-writing-mode: unset; writing-mode: unset; zoom: unset; accent-color: unset; place-content: unset; place-items: unset; place-self: unset; alignment-baseline: unset; anchor-name: unset; anchor-scope: unset; animation-composition: unset; animation: unset; app-region: unset; aspect-ratio: unset; backdrop-filter: unset; backface-visibility: unset; background: unset; background-blend-mode: unset; baseline-shift: unset; baseline-source: unset; block-size: unset; border-block: unset; border: unset; border-radius: unset; border-collapse: unset; border-end-end-radius: unset; border-end-start-radius: unset; border-inline: unset; border-start-end-radius: unset; border-start-start-radius: unset; inset: unset; box-decoration-break: unset; box-shadow: unset; box-sizing: unset; break-after: unset; break-before: unset; break-inside: unset; buffered-rendering: unset; caption-side: unset; caret-animation: unset; caret-color: unset; clear: unset; clip: unset; clip-path: unset; clip-rule: unset; color-interpolation: unset; color-interpolation-filters: unset; color-rendering: unset; columns: unset; column-fill: unset; gap: unset; column-rule: unset; column-span: unset; contain: unset; contain-intrinsic-block-size: unset; contain-intrinsic-size: unset; contain-intrinsic-inline-size: unset; container: unset; content: unset; content-visibility: unset; corner-shape: unset; corner-block-end-shape: unset; corner-block-start-shape: unset; counter-increment: unset; counter-reset: unset; counter-set: unset; cursor: unset; cx: unset; cy: unset; d: unset; display: unset; dominant-baseline: unset; dynamic-range-limit: unset; empty-cells: unset; field-sizing: unset; fill: unset; fill-opacity: unset; fill-rule: unset; filter: unset; flex: unset; flex-flow: unset; float: unset; flood-color: unset; flood-opacity: unset; grid: unset; grid-area: unset; height: unset; hyphenate-character: unset; hyphenate-limit-chars: unset; hyphens: unset; image-orientation: unset; image-rendering: unset; initial-letter: unset; inline-size: unset; inset-block: unset; inset-inline: unset; interest-delay: unset; interpolate-size: unset; isolation: unset; letter-spacing: unset; lighting-color: unset; line-break: unset; line-height: normal; list-style: unset; margin-block: unset; margin: unset; margin-inline: unset; marker: unset; mask-type: unset; math-shift: unset; math-style: unset; max-block-size: unset; max-height: unset; max-inline-size: unset; max-width: unset; min-block-size: unset; min-height: unset; min-inline-size: unset; min-width: unset; mix-blend-mode: unset; object-fit: unset; object-position: unset; object-view-box: unset; offset: unset; opacity: unset; order: unset; orphans: unset; outline: unset; outline-offset: unset; overflow-anchor: unset; overflow-block: unset; overflow-clip-margin: unset; overflow-inline: unset; overflow-wrap: unset; overflow: unset; overlay: unset; overscroll-behavior-block: unset; overscroll-behavior-inline: unset; overscroll-behavior: unset; padding-block: unset; padding: unset; padding-inline: unset; page: unset; page-orientation: unset; paint-order: unset; perspective: unset; perspective-origin: unset; pointer-events: unset; position-try: unset; position-visibility: unset; print-color-adjust: unset; quotes: unset; r: unset; reading-flow: unset; reading-order: unset; resize: unset; rotate: unset; ruby-align: unset; ruby-position: unset; rx: unset; ry: unset; scale: unset; scroll-behavior: unset; scroll-initial-target: unset; scroll-margin-block: unset; scroll-margin: unset; scroll-margin-inline: unset; scroll-marker-group: unset; scroll-padding-block: unset; scroll-padding: unset; scroll-padding-inline: unset; scroll-snap-align: unset; scroll-snap-stop: unset; scroll-snap-type: unset; scroll-target-group: unset; scroll-timeline: unset; scrollbar-color: unset; scrollbar-gutter: unset; scrollbar-width: unset; shape-image-threshold: unset; shape-margin: unset; shape-outside: unset; shape-rendering: unset; size: unset; speak: unset; stop-color: unset; stop-opacity: unset; stroke: unset; stroke-dasharray: unset; stroke-dashoffset: unset; stroke-linecap: unset; stroke-linejoin: unset; stroke-miterlimit: unset; stroke-opacity: unset; stroke-width: unset; tab-size: unset; table-layout: unset; text-align: unset; text-align-last: unset; text-anchor: unset; text-autospace: unset; text-box: unset; text-combine-upright: unset; text-decoration: unset; text-decoration-skip-ink: unset; text-emphasis: unset; text-emphasis-position: unset; text-indent: unset; text-overflow: unset; text-shadow: unset; text-transform: unset; text-underline-offset: unset; text-underline-position: unset; text-wrap: unset; timeline-scope: unset; touch-action: unset; transform: unset; transform-box: unset; transform-origin: unset; transform-style: unset; transition: unset; translate: unset; user-select: unset; vector-effect: unset; vertical-align: unset; view-timeline: unset; view-transition-class: unset; view-transition-group: unset; view-transition-name: unset; visibility: unset; border-spacing: unset; -webkit-box-align: unset; -webkit-box-decoration-break: unset; -webkit-box-direction: unset; -webkit-box-flex: unset; -webkit-box-ordinal-group: unset; -webkit-box-orient: unset; -webkit-box-pack: unset; -webkit-box-reflect: unset; -webkit-line-break: unset; -webkit-line-clamp: unset; -webkit-mask-box-image: unset; -webkit-rtl-ordering: unset; -webkit-ruby-position: unset; -webkit-tap-highlight-color: unset; -webkit-text-combine: unset; -webkit-text-decorations-in-effect: unset; -webkit-text-fill-color: unset; -webkit-text-security: unset; -webkit-text-stroke: unset; -webkit-user-drag: unset; white-space-collapse: unset; widows: unset; width: unset; will-change: unset; word-break: unset; word-spacing: unset; x: unset; y: unset; z-index: unset; }
+
+.VIpgJd-yAWNEb-L7lbkb ol, .VIpgJd-yAWNEb-L7lbkb ul { list-style: none; }
+
+.VIpgJd-yAWNEb-L7lbkb table { border-collapse: collapse; border-spacing: 0px; }
+
+.VIpgJd-yAWNEb-L7lbkb caption, .VIpgJd-yAWNEb-L7lbkb th, .VIpgJd-yAWNEb-L7lbkb td { text-align: right; font-weight: normal; }
+
+div > .VIpgJd-yAWNEb-L7lbkb { padding: 10px 14px; }
+
+.VIpgJd-yAWNEb-L7lbkb { color: rgb(34, 34, 34); background-color: rgb(255, 255, 255); border: 1px solid rgb(238, 238, 238); box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; display: none; font-family: arial; font-size: 10pt; width: 420px; padding: 12px; position: absolute; z-index: 10000; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-nVMfcd-fmcmS, .VIpgJd-yAWNEb-yAWNEb-Vy2Aqc-pbTTYe { clear: both; font-size: 10pt; position: relative; text-align: justify; width: 100%; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-r4nke { color: rgb(153, 153, 153); font-family: arial, sans-serif; margin: 4px 0px; text-align: right; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-TvD9Pc-LgbsSe { display: none; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-l4eHX { float: right; margin: 0px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-Z0Arqf-PLDbbf { display: inline-block; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-fw42Ze-Z0Arqf-haAclf { display: none; width: 100%; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-Z0Arqf-H9tDt { margin-top: 20px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-LK5yu { float: right; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-qwU8Me { float: left; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-cGMI2b { min-height: 15px; position: relative; height: 1%; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-jOfkMb-Ne3sFf { background: rgb(41, 145, 13); border-radius: 4px; box-shadow: rgb(30, 102, 9) 0px 2px 2px inset; color: white; font-size: 9pt; font-weight: bolder; margin-top: 12px; padding: 6px; text-shadow: rgb(30, 102, 9) -1px 1px 1px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-Z0Arqf-hSRGPd { color: rgb(17, 85, 204); cursor: pointer; font-family: arial; font-size: 11px; margin-left: 15px; text-decoration: none; }
+
+.VIpgJd-yAWNEb-L7lbkb > textarea { font-family: arial; resize: vertical; width: 100%; margin-bottom: 10px; border-radius: 1px; border-width: 1px; border-style: solid; border-color: silver rgb(217, 217, 217) rgb(217, 217, 217); border-image: initial; font-size: 13px; height: auto; overflow-y: auto; padding: 1px; }
+
+.VIpgJd-yAWNEb-L7lbkb textarea:focus { box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px inset; border: 1px solid rgb(77, 144, 254); outline: none; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-Z0Arqf-IbE0S { margin-left: 10px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp { min-height: 25px; vertical-align: middle; padding-top: 8px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp { margin-bottom: 0px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input { display: inline-block; min-width: 54px; border: 1px solid rgba(0, 0, 0, 0.1); text-align: center; color: rgb(68, 68, 68); font-size: 11px; font-weight: bold; height: 27px; outline: 0px; padding: 0px 8px; vertical-align: middle; line-height: 27px; margin: 0px 0px 0px 16px; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px; border-radius: 2px; transition: 0.218s; background-color: rgb(245, 245, 245); background-image: -webkit-linear-gradient(top, rgb(245, 245, 245), rgb(241, 241, 241)); user-select: none; cursor: default; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input:hover { border: 1px solid rgb(198, 198, 198); color: rgb(34, 34, 34); transition: all; background-color: rgb(248, 248, 248); background-image: -webkit-linear-gradient(top, rgb(248, 248, 248), rgb(241, 241, 241)); }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input:active { border: 1px solid rgb(198, 198, 198); color: rgb(51, 51, 51); background-color: rgb(246, 246, 246); background-image: -webkit-linear-gradient(top, rgb(246, 246, 246), rgb(241, 241, 241)); }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input:focus .VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input.AHmuwe .VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input:active, .VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input:focus:active { box-shadow: rgba(255, 255, 255, 0.5) 0px 0px 0px 1px inset; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input:focus, .VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input.AHmuwe { outline: none; border: 1px solid rgb(77, 144, 254); z-index: 4 !important; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input.gk6SMd { background-color: rgb(238, 238, 238); background-image: -webkit-linear-gradient(top, rgb(238, 238, 238), rgb(224, 224, 224)); box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px inset; border: 1px solid rgb(204, 204, 204); color: rgb(51, 51, 51); }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input .VIpgJd-yAWNEb-Z0Arqf-sFeBqf { color: white; border-color: rgb(48, 121, 237); background-color: rgb(77, 144, 254); background-image: -webkit-linear-gradient(top, rgb(77, 144, 254), rgb(71, 135, 237)); }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input .VIpgJd-yAWNEb-Z0Arqf-sFeBqf:hover .VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input .VIpgJd-yAWNEb-Z0Arqf-sFeBqf:focus, .VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input .VIpgJd-yAWNEb-Z0Arqf-sFeBqf.AHmuwe .VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input .VIpgJd-yAWNEb-Z0Arqf-sFeBqf:active { border-color: rgb(48, 121, 237); background-color: rgb(53, 122, 232); background-image: -webkit-linear-gradient(top, rgb(77, 144, 254), rgb(53, 122, 232)); }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input .VIpgJd-yAWNEb-Z0Arqf-sFeBqf:hover { box-shadow: rgb(255, 255, 255) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.1) 0px 1px 1px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input:focus, .VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input.AHmuwe, .VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input:active, .VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input:hover, .VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input .VIpgJd-yAWNEb-Z0Arqf-sFeBqf:focus, .VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input .VIpgJd-yAWNEb-Z0Arqf-sFeBqf.AHmuwe, .VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input .VIpgJd-yAWNEb-Z0Arqf-sFeBqf:active, .VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input .VIpgJd-yAWNEb-Z0Arqf-sFeBqf:hover { border-color: rgb(48, 121, 237); }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-mrxPge { color: rgb(153, 153, 153); font-family: arial, sans-serif; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-IFdKyd-W0vJo-fmcmS { color: rgb(153, 153, 153); font-size: 11px; font-family: arial, sans-serif; margin: 15px 0px 5px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-IFdKyd-u0pjoe-fmcmS { color: rgb(136, 0, 0); display: none; font-size: 9pt; }
+
+.VIpgJd-yAWNEb-VIpgJd-fmcmS-sn54Q { background-color: rgb(201, 215, 241); box-shadow: rgb(153, 153, 170) -2px 2px 4px; box-sizing: border-box; position: relative; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-IFdKyd-xl07Ob .VIpgJd-yAWNEb-VIpgJd-xl07Ob { background: rgb(255, 255, 255); border: 1px solid rgb(221, 221, 221); box-shadow: rgb(153, 153, 170) 0px 2px 4px; min-width: 0px; outline: none; padding: 0px; position: absolute; z-index: 2000; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-IFdKyd-xl07Ob .VIpgJd-yAWNEb-VIpgJd-j7LFlb { cursor: pointer; padding: 2px 5px 5px; margin-left: 0px; border-style: none; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-IFdKyd-xl07Ob .VIpgJd-yAWNEb-VIpgJd-j7LFlb:hover { background: rgb(221, 221, 221); }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-IFdKyd-xl07Ob .VIpgJd-yAWNEb-VIpgJd-j7LFlb h1 { font-size: 100%; font-weight: bold; margin: 4px 0px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-IFdKyd-xl07Ob .VIpgJd-yAWNEb-VIpgJd-j7LFlb strong { color: rgb(52, 90, 173); }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-VIpgJd-eKm5Fc-hFsbo { text-align: left; position: absolute; left: 0px; right: auto; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-VIpgJd-j7LFlb-SIsrTd .VIpgJd-yAWNEb-VIpgJd-eKm5Fc-hFsbo { text-align: right; position: absolute; right: 0px; left: auto; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-yAWNEb-Vy2Aqc-fmcmS, .VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-TVLw9c-ppHlrf-sn54Q { background-color: rgb(241, 234, 0); border-radius: 4px; box-shadow: rgba(0, 0, 0, 0.5) -3px 3px 4px; box-sizing: border-box; color: rgb(241, 234, 0); cursor: pointer; margin: -2px -3px -2px -2px; padding: 2px 3px 2px 2px; position: relative; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-TVLw9c-ppHlrf-sn54Q { color: rgb(34, 34, 34); }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-yAWNEb-Vy2Aqc-pbTTYe { color: white; position: absolute !important; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-TVLw9c-ppHlrf, .VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-TVLw9c-ppHlrf .VIpgJd-yAWNEb-TVLw9c-ppHlrf-sn54Q { background-color: rgb(201, 215, 241); border-radius: 4px 4px 0px 0px; box-shadow: rgba(0, 0, 0, 0.5) -3px 3px 4px; box-sizing: border-box; cursor: pointer; margin: -2px -3px -2px -2px; padding: 2px 3px 3px 2px; position: relative; }
+
+.VIpgJd-yAWNEb-L7lbkb span:focus { outline: none; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-TVLw9c-DyVDA { background-color: transparent; border: 1px solid rgb(77, 144, 254); border-radius: 0px; margin: -2px; padding: 1px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-yAWNEb-TVLw9c-sn54Q-LzX3ef { border-right: 2px solid red; margin-right: -2px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-yAWNEb-TVLw9c-sn54Q-YIAiIb { border-left: 2px solid red; margin-left: -2px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-IFdKyd-YPqjbf { padding: 2px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-IFdKyd-YPqjbf-fmcmS { font-size: 11px; padding: 2px 2px 3px; margin: 0px; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); border-width: 1px; border-style: solid; border-color: rgb(192, 192, 192) rgb(217, 217, 217) rgb(217, 217, 217); border-image: initial; display: inline-block; vertical-align: top; height: 21px; box-sizing: border-box; border-radius: 1px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-IFdKyd-YPqjbf-fmcmS:hover { border-width: 1px; border-style: solid; border-color: rgb(160, 160, 160) rgb(185, 185, 185) rgb(185, 185, 185); border-image: initial; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px inset; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-IFdKyd-YPqjbf-fmcmS:focus { box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px inset; outline: none; border: 1px solid rgb(77, 144, 254); }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-IFdKyd-YPqjbf-sFeBqf { font-size: 11px; padding: 2px 6px 3px; margin: 0px 2px 0px 0px; height: 21px; }
+
+.VIpgJd-yAWNEb-L7lbkb > div { display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; flex-direction: column; font-family: "Google Sans", Arial, sans-serif; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-Ud7fr { display: flex; -webkit-box-align: end; align-items: end; margin: 14px; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-IuizWc-SIsrTd { margin-left: 14px; color: rgb(116, 119, 117); font-size: 14px; font-weight: 500; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-IuizWc-i3jM8c { margin-right: 14px; color: rgb(116, 119, 117); font-size: 14px; font-weight: 500; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-k77Iif { margin: 0px 16px 16px; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-axAV1 { width: auto; color: rgb(31, 31, 31); font-size: 16px; text-align: initial; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-axAV1 .VIpgJd-yAWNEb-SIsrTd { text-align: left; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-N7Eqid { border-radius: 0px 0px 12px 12px; margin: 0px; background: rgb(241, 244, 249); position: relative; min-height: 50px; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-N7Eqid .VIpgJd-yAWNEb-SIsrTd { text-align: left; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od { display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; flex-direction: column; width: 77%; padding: 12px; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od .VIpgJd-yAWNEb-SIsrTd { text-align: left; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-UTujCb { color: rgb(31, 31, 31); font-size: 12px; font-weight: 500; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od .VIpgJd-yAWNEb-SIsrTd .VIpgJd-yAWNEb-hvhgNd-UTujCb { text-align: left; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-eO9mKe { color: rgb(68, 71, 70); font-size: 12px; padding-top: 4px; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od .VIpgJd-yAWNEb-SIsrTd .VIpgJd-yAWNEb-hvhgNd-eO9mKe { text-align: left; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-xgov5 { position: absolute; top: 10px; left: 5px; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-xgov5 .VIpgJd-yAWNEb-SIsrTd { right: 5px; left: auto; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-THI6Vb { fill: rgb(11, 87, 208); }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-bgm6sf { margin: -4px 0px 0px 2px; padding: 2px 0px 0px; width: 48px; height: 48px; border: none; border-radius: 24px; cursor: pointer; background: none; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-bgm6sf:hover { background: rgb(232, 235, 236); }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-aXYTce { display: none; }
+
+sentinel { }
+------MultipartBoundary--KLysf0wwt7b0oVtuMwbspi2QK331FNc1F0qphgfy5J----
+Content-Type: image/png
+Content-Transfer-Encoding: binary
+Content-Location: https://ssl.gstatic.com/docs/common/mobileweb_sprite1.png
+
+‰PNG
+
+   
+IHDR   $   œ   ™	€  	UIDAThÞí[[lWþÎ™Ù›Çn¸
+8Ik'm\š*VÒEBj¸51/T¢5ÚP¥ Zå&Ñ‡Já	„*c‚h¤ Ü€€B›òÂå)I+”“æ! †„XNHÓbrñ:ï®wæü<ìmvvÎÌ9Ç“x#ö6ž=sûæÿþÿ?ç|{h2ca;‡~ÿ½þi7×GBTDTÙvIÔ¶§zÞÆölÊÅ
+hóï¾½ãb~f „Ò½‰*[¥¶
+>*>»zË…Û¦»zž,èâ²ó3?0uú²¶%K/Ýš=±sl,  ï˜XGfÑªäÚŽê‚’"ªñÒÔ·Uè
+²L*ÝŸ¹·ý°(9 Ï?/˜(‡‘Ï¥Édb}Û½í‡TAq(ÜÀ&Êc~³ö@òžÌ¸
+(®$L‡DƒÇÒ©ô:»?slxt4eHYý'L];ÿ˜šŽ©tzMçÆÎÉíc;¥ž²#)óù Š>bÀÁsÇ{SSèL.#‚¨T<Æ@ å—Sùc îÒ$ØT¾±Ë	Ç)ðì9°œ0*e,¥šOk´=D’DAiï?–3ˆÌbàŽ'_	 OŒP&÷^`ÐWÚXé?Ñnf0Ç[×˜> 2 P_"cåàTüdˆ"©$`i6' Wj”EÅ’F­	V*4®   à“+7Iû¾ Ïî;ófýõ,˜RlßxL«×ßwæMÏÃ•=f13Êdtýbâ öžz½úý…MÛ ß©ê¡í}bûê-`"@›2 ˜)æq.w©JQÁ- Þ™½X=îr1/cÔaOòÌÚ­xfíÖ†öï
+x ½ž­ÓUìç§bïÄÁêþ‘ûŸøúøXõ¼'WoÁ}†få¼ëPåb3Å\=~Ê*ÇÈkULi_±áþmîßÖpìIe²ëŒ=$·½§à¥S5Ê~¸é €¯ÿ¬zÌç²ÌS0McHö¤^Êà¡ìÜìÅZ&:9­	Áü([»
+Ãk·5´Ÿ|øÇ¡±8¯´—=Ë®þIø$;©=¨e?:þ‡HoFyÅ,ËF²XQcC¡7 a—–Nƒ„#²Q3Z¿GH:§£úé9Ñ%m@	ØÃŠÄ¦ª8ôU#Áªû'õÚ–ÕK‚˜Nà{Å«ºvFÂ±01ó•ßœFË®‡Æøü¯óýÓ³N,Pc¼T^–>z_Ûþ¡Í<^ñK»¯îÈ˜Gcô¤5y›êÛ‰Ýg_¸ÓIöòø4Æé9f¦1áÖÅ|éYûÚ‰±±Éø4FFóÓ—,N­¢•ÝGuA)jŒUX¡›Édý¼÷öÃ: ”«º›’º8A$lk½µê¶Cª ¢5Æ 0Ô'… µSö [Ù=®Š+	„Ã­‰tb³bÙ±ÑÑ“fcPg%ãûþ¯wæ“¡-“\c­í™Üâ)mÁ*
+ÀñÖé"Îýç<ÚÓ%iªº1 lù•BÊDcª1–µ(âÞË/Â™ó3sù’bæÎ™‰Æ4 ã C²£ÅkW!œBUôde¥6VœâðÑÃ $·£˜· œ9¥i¾ú˜šÂëMX\Ù©\ÆAN1Baó©>•þÙO¦ \'´;2£LV‡(\•åv"Ê]LeƒÙ6 \Ä–e¿|ÊÕêõ‡vóÆ$`–©`Õh¯½ÅÕÊ‚)ÌÉôg®¼z„EN©2ÕèÿŒ³ìW_V£¬nh·§ÆØhûŽpÉ~
+`áµ*ž,#¼rDvìNÂjU,bÃËO-aâÑ-­§¶SÔT?›¢¨ëÌ+¨%öÊß˜qw2¯’ùòÓÑYöÈ‹–<Ö#j‘e\ý(Üƒ±PöÛÊT¼bC¤1ÿBD¬P1¤<ƒ&Í ¸xÈÜžeU§GcH¶àÀ@cdÅÂpÃÍ	c# ÔgÅ93ñ#;³½°^K@Kct$ã ¬¹ÔÄëß¿¥¥1¶¬©í ®i0yO†ïZh@Ï”¤‘…òÌãåíç}€..M.€'| f|ìF‚ôÅŒÔs
+ÆêñM“Ì‚Ð´íf“ki0[o&0¿ÑéÝT`Ðl` óÐB'š
+LËZfb¡SäüáÁ~§8ÝÇXí'7"Ïêlï¶[SÖÚÒÞÏ7Ä»öãêõ;˜3µ§A6 ÿ¯ùõí‚€Äû¿xáßgWôÜ5øl|k?Xá¿Fk?H <³téíw¼{â@È.Ú€`Qg¤ºbédçªMì¨.(]#á£%@ð‘èm©Tÿ†¬Ã“  ùÁD®pôy*±¾ëƒ‰CªžâÑAA`¢ÖËøèKðûÙ¸Š§¸0A+>…Óp^[:¹nÙÆâ±?Ž§b ,
+Lí/c@áÒ±À+&3‹ÖlÞ’ž<0¶]ê)áœ‚¿Khd Ïÿ¦ÎVWmI7+íc\,¿»û²þÚ)¬•<d[.Òô6f³N®´¥²â“	çXcà!ùM£Úâ O$º€¹Ë€[`uža/+{ƒB¼V¾)+õKéBñA™JB†ý<EÿµÛnŽPJ>ãçÝ®P*?Z/0ÇpÅ¹u|Ô¾¬²UB)]ù+ýKÆ” 8sãòÄÝ?¬ŒZ—+r`‡ï¬»žeÃM²Ô¶2êCž©ÿy¸|MfS&9Ñ½æÌ„Ÿi/¬%Ú³fP—'½»ìì
+ÇÕ½Âµò[=ßŒÈÂX²Ì?Vò/$ 5êc¥,ˆb1¯‡êÞHˆêBÂöSÌï—È¿öE½»¡Ø+5@ï{
+èþ4(ä²:½¦]©<ÇÛAÉv“”ãRcÄXþˆ¼ú,Tä"ú»*5?þ9Pûµ¾LFØÌ!­É€e,ûXöðx#òÌÑõf(¶i
+’u¾Ñué:d™ú@No¦.6²¡óµÀyv-u5ˆäBí‡SàÃ
+7¤± ºEÃ÷Ë²¯¦zô‚Å³öƒ„+l`â–ÏàtK+lYË$öò§iÀ€"€{š	Ì§š	Ì#-006§™À˜~æe7‰y)jjú uÝ:W[  o·Fb-kVûð`ac%`    IEND®B`‚
+------MultipartBoundary--KLysf0wwt7b0oVtuMwbspi2QK331FNc1F0qphgfy5J----
+Content-Type: text/css
+Content-Transfer-Encoding: binary
+Content-Location: https://fonts.googleapis.com/css?family=Google+Sans
+
+@charset "utf-8";
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: url("https://fonts.gstatic.com/s/googlesans/v67/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJl1pynAESo4b4o.woff2") format("woff2"); unicode-range: U+308, U+530-58F, U+2010, U+2024, U+25CC, U+FB13-FB17; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: url("https://fonts.gstatic.com/s/googlesans/v67/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJl3pynAESo4b4o.woff2") format("woff2"); unicode-range: U+951-952, U+964-965, U+980-9FE, U+1CD0, U+1CD2, U+1CD5-1CD6, U+1CD8, U+1CE1, U+1CEA, U+1CED, U+1CF2, U+1CF5-1CF7, U+200C-200D, U+20B9, U+25CC, U+A8F1; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: url("https://fonts.gstatic.com/s/googlesans/v67/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJlKpynAESo4b4o.woff2") format("woff2"); unicode-range: U+2C7, U+2D8-2D9, U+2DB, U+307, U+1400-167F, U+18B0-18F5, U+25CC, U+11AB0-11ABF; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: local("Google Sans Regular"), local("GoogleSans-Regular"), url("https://fonts.gstatic.com/s/googlesans/v67/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJlopynAESo4b4o.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: local("Google Sans Regular"), local("GoogleSans-Regular"), url("https://fonts.gstatic.com/s/googlesans/v67/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJlhpynAESo4b4o.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: url("https://fonts.gstatic.com/s/googlesans/v67/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJlkpynAESo4b4o.woff2") format("woff2"); unicode-range: U+900-97F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: url("https://fonts.gstatic.com/s/googlesans/v67/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJl0pynAESo4b4o.woff2") format("woff2"); unicode-range: U+30E, U+1200-1399, U+2D80-2DDE, U+AB01-AB2E, U+1E7E0-1E7E6, U+1E7E8-1E7EB, U+1E7ED-1E7EE, U+1E7F0-1E7FE; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: url("https://fonts.gstatic.com/s/googlesans/v67/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJl6pynAESo4b4o.woff2") format("woff2"); unicode-range: U+589, U+10A0-10FF, U+1C90-1CBA, U+1CBD-1CBF, U+205A, U+2D00-2D2F, U+2E31; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: local("Google Sans Regular"), local("GoogleSans-Regular"), url("https://fonts.gstatic.com/s/googlesans/v67/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJlppynAESo4b4o.woff2") format("woff2"); unicode-range: U+1F00-1FFF; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: local("Google Sans Regular"), local("GoogleSans-Regular"), url("https://fonts.gstatic.com/s/googlesans/v67/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJlmpynAESo4b4o.woff2") format("woff2"); unicode-range: U+370-377, U+37A-37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3FF; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: url("https://fonts.gstatic.com/s/googlesans/v67/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJl-pynAESo4b4o.woff2") format("woff2"); unicode-range: U+951-952, U+964-965, U+A80-AFF, U+200C-200D, U+20B9, U+25CC, U+A830-A839; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: url("https://fonts.gstatic.com/s/googlesans/v67/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJlGpynAESo4b4o.woff2") format("woff2"); unicode-range: U+951-952, U+964-965, U+A01-A76, U+200C-200D, U+20B9, U+25CC, U+262C, U+A830-A839; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: local("Google Sans Regular"), local("GoogleSans-Regular"), url("https://fonts.gstatic.com/s/googlesans/v67/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJlnpynAESo4b4o.woff2") format("woff2"); unicode-range: U+307-308, U+590-5FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: url("https://fonts.gstatic.com/s/googlesans/v67/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJlupynAESo4b4o.woff2") format("woff2"); unicode-range: U+1780-17FF, U+19E0-19FF, U+200C-200D, U+25CC; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: url("https://fonts.gstatic.com/s/googlesans/v67/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJlspynAESo4b4o.woff2") format("woff2"); unicode-range: U+E81-EDF, U+200C-200D, U+25CC; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: url("https://fonts.gstatic.com/s/googlesans/v67/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJl9pynAESo4b4o.woff2") format("woff2"); unicode-range: U+307, U+323, U+951-952, U+964-965, U+D00-D7F, U+1CDA, U+1CF2, U+200C-200D, U+20B9, U+25CC, U+A830-A832; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: url("https://fonts.gstatic.com/s/googlesans/v67/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJl8pynAESo4b4o.woff2") format("woff2"); unicode-range: U+951-952, U+964-965, U+B01-B77, U+1CDA, U+1CF2, U+200C-200D, U+20B9, U+25CC; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: url("https://fonts.gstatic.com/s/googlesans/v67/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJl4pynAESo4b4o.woff2") format("woff2"); unicode-range: U+964-965, U+D81-DF4, U+1CF2, U+200C-200D, U+25CC, U+111E1-111F4; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: url("https://fonts.gstatic.com/s/googlesans/v67/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJkLpynAESo4b4o.woff2") format("woff2"); unicode-range: U+1-C, U+E-1F, U+7F-9F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: url("https://fonts.gstatic.com/s/googlesans/v67/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJlzpynAESo4b4o.woff2") format("woff2"); unicode-range: U+964-965, U+B82-BFA, U+200C-200D, U+20B9, U+25CC; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: url("https://fonts.gstatic.com/s/googlesans/v67/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJl5pynAESo4b4o.woff2") format("woff2"); unicode-range: U+951-952, U+964-965, U+C00-C7F, U+1CDA, U+1CF2, U+200C-200D, U+25CC; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: url("https://fonts.gstatic.com/s/googlesans/v67/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJlxpynAESo4b4o.woff2") format("woff2"); unicode-range: U+2D7, U+303, U+331, U+E01-E5B, U+200C-200D, U+25CC; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: local("Google Sans Regular"), local("GoogleSans-Regular"), url("https://fonts.gstatic.com/s/googlesans/v67/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJlqpynAESo4b4o.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: local("Google Sans Regular"), local("GoogleSans-Regular"), url("https://fonts.gstatic.com/s/googlesans/v67/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJlrpynAESo4b4o.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: local("Google Sans Regular"), local("GoogleSans-Regular"), url("https://fonts.gstatic.com/s/googlesans/v67/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJllpynAESo4.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+------MultipartBoundary--KLysf0wwt7b0oVtuMwbspi2QK331FNc1F0qphgfy5J----
+Content-Type: text/css
+Content-Transfer-Encoding: binary
+Content-Location: cid:css-d305575d-d270-47ba-b36b-27b8a058f039@mhtml.blink
+
+@charset "utf-8";
+
+@import url("https://fonts.googleapis.com/css?family=Google+Sans");
+
+.docs-ml-promotion { z-index: 1002; }
+
+.docs-ml-header { z-index: 1; }
+
+.docs-ml-icon { direction: ltr; display: inline-block; text-align: left; overflow: hidden; position: relative; vertical-align: middle; }
+
+.docs-ml-img::before { content: url("https://ssl.gstatic.com/docs/common/mobileweb_sprite1.png"); }
+
+.docs-ml-img-container { height: 156px; position: absolute; width: 36px; }
+
+.docs-ml-docs-logo-icon { left: 0px; top: -36px; }
+
+.docs-ml-sheets-logo-icon { left: 0px; top: 0px; }
+
+.docs-ml-slides-logo-icon { left: 0px; top: -96px; }
+
+.docs-ml-arrow-back-icon { left: 0px; top: -132px; }
+
+.docs-ml-edit-icon { left: 0px; top: -72px; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  .docs-ml-img { content: url("https://ssl.gstatic.com/docs/common/mobileweb_sprite1.png"); }
+  .docs-ml-img-container { height: 156px; position: absolute; width: 36px; }
+  .docs-ml-docs-logo-icon { left: 0px; top: -36px; }
+  .docs-ml-sheets-logo-icon { left: 0px; top: 0px; }
+  .docs-ml-slides-logo-icon { left: 0px; top: -96px; }
+  .docs-ml-arrow-back-icon { left: 0px; top: -132px; }
+  .docs-ml-edit-icon { left: 0px; top: -72px; }
+}
+
+.docs-ml-header { background: rgb(249, 249, 249); border-bottom: 1px solid rgb(203, 203, 203); box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px; box-sizing: border-box; font-family: "Google Sans", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif; padding: 4px 0px; position: fixed; left: 0px; top: 0px; width: 100%; }
+
+.docs-ml-header-icon { height: 24px; opacity: 0.6; width: 24px; }
+
+.docs-ml-header-icon-container { padding: 12px; }
+
+.docs-ml-header-item { display: inline-block; vertical-align: middle; }
+
+.docs-ml-header-drive-link { padding-left: 4px; }
+
+body[dir="rtl"] .docs-ml-arrow-back-dir { transform: scaleX(-1); }
+
+.docs-ml-header-document-title { box-sizing: border-box; line-height: 24px; padding: 0px 12px; width: calc(100% - 104px); }
+
+.docs-ml-header-document-title-text { font-size: 20px; font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.docs-ml-header-edit-button { float: right; padding-right: 4px; }
+
+.docs-ml-promotion { background: rgb(255, 255, 255); bottom: 0px; box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 12px; font-family: Arial, Helvetica, sans-serif; left: 0px; position: fixed; width: 100%; }
+
+.docs-ml-promotion-off-screen { transform: translateY(100%); }
+
+.docs-ml-promotion-shown { transform: translateY(0px); transition: transform 333ms cubic-bezier(0.4, 0, 0.2, 1); }
+
+.docs-ml-promotion-dismissed { transform: translateY(100%); box-shadow: none; }
+
+.docs-ml-promotion-no-horizontal-scroll { overflow-x: hidden; }
+
+.docs-ml-promotion-header { display: table; padding: 24px 24px 0px; }
+
+.docs-ml-promotion-app-icon-container { display: table-cell; }
+
+.docs-ml-promotion-app-icon { height: 36px; width: 36px; }
+
+@media (min-width: 600px) {
+  .docs-ml-promotion-app-icon { transform: scale(1.33); }
+}
+
+.docs-ml-promotion-text { display: table-cell; padding-left: 20px; vertical-align: top; }
+
+.docs-ml-promotion-text-heading { color: rgba(0, 0, 0, 0.87); font-size: 16px; font-weight: 700; padding-bottom: 7px; }
+
+.docs-ml-promotion-text-body { color: rgba(0, 0, 0, 0.87); font-size: 14px; }
+
+.docs-ml-promotion-action-row { float: right; margin-top: 6px; padding: 8px 24px; }
+
+.docs-ml-promotion-action-row-desktop { margin-top: 6px; }
+
+.docs-ml-promotion-action-container { display: inline-block; height: 48px; margin: 6px 4px; vertical-align: middle; }
+
+.docs-ml-promotion-action-button { display: inline-block; font-size: 14px; font-weight: 500; padding: 9px 12px; vertical-align: middle; }
+
+.docs-ml-promotion-action-button-wrapper:focus { outline-color: rgb(214, 214, 214); }
+
+.docs-ml-promotion-action-button.docs-ml-promotion-yes-button { background-color: rgb(66, 133, 244); border-radius: 4px; color: rgb(249, 249, 249); border: 1px solid transparent; }
+
+.docs-ml-promotion-action-button.docs-ml-promotion-yes-button:active { background-color: rgb(25, 103, 210); }
+
+.docs-ml-promotion-action-button.docs-ml-promotion-no-button { background-color: rgb(249, 249, 249); color: rgb(95, 99, 104); border-radius: 4px; border: 1px solid rgb(218, 220, 224); }
+
+.docs-ml-promotion-action-button.docs-ml-promotion-no-button:active { background-color: rgb(245, 245, 245); }
+
+.docs-ml-promotion.desktop { text-align: center; }
+
+@media (orientation: portrait) {
+  .docs-ml-promotion.desktop { padding-top: 56px; padding-bottom: 80px; }
+}
+
+@media (orientation: landscape) {
+  .docs-ml-promotion.desktop { padding-top: 36px; padding-bottom: 56px; }
+}
+
+.docs-ml-promotion-heading-desktop { font-family: "Google Sans"; font-size: 18px; font-weight: 700; color: rgb(32, 33, 36); padding-top: 18px; padding-bottom: 10px; line-height: 1.5; max-width: 360px; margin: 0px auto; }
+
+@media (orientation: landscape) {
+  .docs-ml-promotion-heading-desktop { padding-top: 0px; max-width: none; }
+}
+
+.docs-ml-promotion-text-body-desktop { font-size: 14px; line-height: 1.5; color: rgb(95, 99, 104); padding-bottom: 10px; }
+
+.docs-icon.docs-ml-promotion-desktop-icon { height: 40px; width: 40px; transform: scale(2.5); transform-origin: center top; }
+
+.docs-icon-ml-promotion-icon-container-desktop { height: 100px; width: 100px; margin-left: auto; margin-right: auto; }
+
+@media (orientation: landscape) {
+  .docs-icon-ml-promotion-icon-container-desktop { display: inline-block; vertical-align: top; }
+  .docs-ml-promotion-description-desktop { display: inline-block; vertical-align: top; text-align: left; padding-left: 39px; max-width: 645px; }
+}
+
+@media (orientation: landscape) {
+  .docs-ml-promotion-action-row-desktop { margin-left: -8px; }
+}
+
+.docs-ml-promotion-action-row-desktop .docs-ml-promotion-action-container { margin: 6px 8px; font-family: "Google Sans"; }
+
+.docs-ml-promotion-action-row-desktop .docs-ml-promotion-action-button-wrapper:focus { outline: none; }
+
+.docs-ml-promotion-action-button.docs-ml-promotion-yes-button.docs-ml-promotion-app-themed { border-radius: 4px; box-shadow: none; box-sizing: border-box; font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif; font-weight: 500; font-size: 14px; height: 36px; letter-spacing: 0.25px; line-height: 16px; padding: 9px 24px 11px; background: rgb(26, 115, 232); color: rgb(255, 255, 255); border: 1px solid transparent !important; }
+
+.docs-ml-promotion-action-button.docs-ml-promotion-no-button.docs-ml-promotion-app-themed { border-radius: 4px; box-shadow: none; box-sizing: border-box; font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif; font-weight: 500; font-size: 14px; height: 36px; letter-spacing: 0.25px; line-height: 16px; padding: 9px 24px 11px; background: rgb(255, 255, 255); color: rgb(26, 115, 232); border: 1px solid rgb(218, 220, 224) !important; }
+
+.docs-ml-promotion-action-button-wrapper:focus .docs-ml-promotion-action-button.docs-ml-promotion-yes-button.docs-ml-promotion-app-themed { color: rgb(255, 255, 255); background: rgb(80, 148, 237); box-shadow: rgba(66, 133, 244, 0.15) 0px 1px 3px 1px; }
+
+.docs-ml-promotion-action-button-wrapper:focus .docs-ml-promotion-action-button.docs-ml-promotion-no-button.docs-ml-promotion-app-themed { border-radius: 4px; box-shadow: none; box-sizing: border-box; font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif; font-weight: 500; font-size: 14px; height: 36px; letter-spacing: 0.25px; line-height: 16px; padding: 9px 24px 11px; background: rgb(233, 241, 254); border: 1px solid rgb(193, 216, 251) !important; }
+
+.docsshared-no-download .docsshared-no-select-when-no-download, .docsshared-no-select { -webkit-user-drag: none; user-select: none; }
+
+.docsshared-disable-image-copy canvas, .docsshared-disable-image-copy image, .docsshared-disable-image-copy img { pointer-events: none; }
+------MultipartBoundary--KLysf0wwt7b0oVtuMwbspi2QK331FNc1F0qphgfy5J----
+Content-Type: text/css
+Content-Transfer-Encoding: binary
+Content-Location: cid:css-880b7acb-2dd5-4b89-a72c-3797589b57f7@mhtml.blink
+
+@charset "utf-8";
+
+html { overflow: auto; }
+
+body { margin: 0px; overflow: hidden; overflow-wrap: break-word; }
+
+.app-container { height: 100%; margin-top: 57px; overflow: auto; }
+
+.doc { padding: 20px 12px 0px; position: relative; }
+
+.doc .doc-content { margin: auto; padding: 24px 0px !important; max-width: 770px !important; }
+------MultipartBoundary--KLysf0wwt7b0oVtuMwbspi2QK331FNc1F0qphgfy5J----
+Content-Type: text/html
+Content-ID: <frame-6A91A70ED7BFF453DAFD317BF13026BC@mhtml.blink>
+Content-Transfer-Encoding: binary
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body></body></html>
+------MultipartBoundary--KLysf0wwt7b0oVtuMwbspi2QK331FNc1F0qphgfy5J------
